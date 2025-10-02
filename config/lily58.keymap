@@ -10,7 +10,11 @@
 
 &mt {
     tapping-term-ms = <250>;
-    flavor = "tap-unless-interrupted";
+    flavor = "tap-preferred";
+    retro-tap;
+    quick-tap-ms = <150>;
+    hold-trigger-on-release;
+    require-prior-idle-ms = <60>;
 };
 
 / {
