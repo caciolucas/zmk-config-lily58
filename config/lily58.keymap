@@ -75,8 +75,8 @@
             bindings = <
 &kp F1    &kp F2        &kp F3        &kp F4        &kp F5      &kp F6                                   &kp F7  &kp F8        &kp F9        &kp F10       &kp F11  &kp F12
 &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans                                   &trans  &kp N7        &kp N8        &kp N9        &trans   &trans
-&kp CAPS  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR  &kp PRCNT                                &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans   &trans
-&trans    &trans        &trans        &trans        &trans      &trans     &bt BT_CLR_ALL    &bt BT_CLR  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans   &kp PIPE
+&caps_word  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR  &kp PRCNT                                &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans   &trans
+&kp PIPE  &kp RBRC      &kp LBRC      &kp EQUAL     &kp MINUS   &kp KP_PLUS  &bt BT_CLR_ALL    &bt BT_CLR  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans   &kp PIPE
                                       &trans        &trans      &trans     &trans            &kp DELETE  &kp N0  &trans        &trans
             >;
 
@@ -92,11 +92,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &trans   &trans   &trans                     &trans       &trans          &trans        &trans           &trans     &trans
-&kp GRAVE  &kp N1        &kp N2        &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7          &kp N8        &kp N9           &kp N0     &trans
-&kp F1     &kp F2        &kp F3        &kp F4   &kp F5   &kp F6                     &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT  &trans
-&kp F7     &kp F8        &kp F9        &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS       &kp EQUAL     &kp LBKT         &kp RBKT   &kp BSLH
-                                       &trans   &trans   &trans   &trans    &trans  &trans       &trans          &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans       &trans          &trans        &trans           &trans   &trans
+&trans      &kp INS       &kp LG(LS(N4))  &kp K_CMENU   &trans        &trans                          &trans       &trans          &trans        &trans           &trans   &trans
+&trans      &kp F1        &kp F2          &kp F3        &kp F4        &kp F5                          &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DEL  &kp BSPC
+&trans      &kp LG(Z)     &kp LG(LS(Z))   &kp LG(X)     &kp LG(C)     &kp LG(V)  &trans    &trans   &kp KP_PLUS  &kp MINUS       &kp EQUAL     &kp LBKT         &kp RBKT &kp BSLH
+                                           &trans         &trans        &trans     &trans    &trans   &trans       &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
