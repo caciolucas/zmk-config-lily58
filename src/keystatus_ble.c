@@ -6,7 +6,7 @@
  * Profile char UUID: CAFE0003-CAFE-CAFE-CAFE-CAFECAFECAFE  (read + notify, uint8, 0-based)
  */
 
-#if IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL) || !IS_ENABLED(CONFIG_ZMK_SPLIT)
+#if defined(CONFIG_ZMK_SPLIT_ROLE_CENTRAL) || !defined(CONFIG_ZMK_SPLIT)
 
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/gatt.h>
@@ -75,4 +75,4 @@ ZMK_LISTENER(keystatus_profile, on_profile_changed);
 ZMK_SUBSCRIPTION(keystatus_profile, zmk_ble_active_profile_changed);
 #endif /* CONFIG_ZMK_BLE */
 
-#endif /* CONFIG_ZMK_SPLIT_ROLE_CENTRAL || !CONFIG_ZMK_SPLIT */
+#endif /* defined(CONFIG_ZMK_SPLIT_ROLE_CENTRAL) || !defined(CONFIG_ZMK_SPLIT) */
