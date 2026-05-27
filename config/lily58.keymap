@@ -40,6 +40,16 @@
             bindings = <&kp LEFT_COMMAND>;
             key-positions = <27 26>;
         };
+
+        left-ctrl-mod-combo {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <25 26>;
+        };
+
+        right-ctrl-mod-combo {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <33 34>;
+        };
     };
 
     keymap {
