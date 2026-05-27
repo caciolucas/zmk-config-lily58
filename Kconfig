@@ -1,0 +1,4 @@
+config ZMK_KEYSTATUS_BLE
+    bool "KeyStatus BLE GATT service (layer + BT profile reporting)"
+    default n
+    depends on BT
